@@ -1,27 +1,9 @@
 
-/*
-*  MIT License
-*
-*  Copyright (c) 2019-present Alden Zamora
-
-*  Permission is hereby granted, free of charge, to any person obtaining a copy
-*  of this software and associated documentation files (the "Software"), to deal
-*  in the Software without restriction, including without limitation the rights
-*  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-*  copies of the Software, and to permit persons to whom the Software is
-*  furnished to do so, subject to the following conditions:
-
-*  The above copyright notice and this permission notice shall be included in all
-*  copies or substantial portions of the Software.
-
-*  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-*  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-*  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-*  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-*  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-*  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-*  SOFTWARE.
-*/
+/* -----------------------------------------------
+ * webpack-and-chill v1.0.0
+ * (c) 2019-present Alden Zamora
+ * Released under MIT license[http://opensource.org/licenses/MIT]
+ * =============================================== */
 
 /************************************************
 -- WEBPACK CONFIG JS: variables / package imports
@@ -36,7 +18,7 @@ const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 /************************************************
 -- 1. ADD YOUR PAGES in commonPages; 2. (optional) : edit arrPages/path in entryJS and entryPug if needed
 ************************************************/
-const commonPages = ['index', 'about'];
+const commonPages = ['index'];
 const entryJS = {
   arrPages: commonPages, // Add more jsEntries: const arrPages = [...commonPages, addJSfiles]; or use ES6 .filter() to exclude
   path: './src/js/',
