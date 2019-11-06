@@ -1,19 +1,71 @@
 @import '~css-reset-and-normalize/scss/reset-and-normalize'
-@font-face
-  font-family: 'MyModak'
-  src: url('../fonts/Modak/Modak-Regular.ttf')
-  font-weight: bold
 
 body
+  background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%)
+
+.grid
+  height: 100vh
+  position: relative
   display: flex
+  justify-content: space-around
   align-items: center
   flex-direction: column
-  vertical-align: middle
-  width: 100%
+  &__wrapper
+    width: 100%
+    min-height: 100%
 
-#telegram-logo
-  height: 10em
-  width: 10em
+.page
+  width: 80%
+  min-height: 100vh
+  margin: auto
+  display: flex
+  justify-content: space-between
+  flex-direction: column
+  &__header
+    width: 100%
+    display: flex
+    align-items: center
+    flex-grow: 1
+    flex-direction: column
+    justify-content: space-around
+    a:link
+      text-decoration: none
+    a:visited
+      text-decoration: none
+    a:hover
+      text-decoration: none
+    a:active
+      text-decoration: none
 
-p
-  font-family: 'MyModak'
+  &__middle
+    width: 100%
+    display: flex
+    flex-grow: 1
+  &__footer
+    width: 100%
+    display: flex
+    align-items: center
+    flex-grow: 1
+    justify-content: space-around
+    p, a
+      font-size: 0.8em
+      color: white
+  &__title
+    font-size: 1.5em
+    color: white
+
+#github
+  background: url('../images/GitHub-Mark-Light-120px-plus.png') no-repeat
+  width: 120px
+  height: 120px
+  position: absolute
+
+#tp__canvas
+  z-index: -1
+  width: inherit
+  height: inherit
+  border: 1px solid orange
+
+@media screen and (max-width: 360px)
+  #github
+    display: none
