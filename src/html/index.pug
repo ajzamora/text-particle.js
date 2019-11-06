@@ -1,6 +1,22 @@
 extends layouts/layout
 block title
   meta( charset="UTF-8")
-  title Text Particles
+  title ajzamora.github.io/text-particles.js
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
 block content
-    canvas#tp__canvas
+  .grid
+    #github
+    .grid__wrapper
+      .page
+        .page__header
+          a(href="https://github.com/ajzamora/text-particles.js" alt="GitHub")
+            p.page__title
+              | TEXT-PARTICLES.JS
+        .page__middle
+          canvas#tp__canvas
+        .page__footer
+          p
+             | © Alden Zamora | 2019
+          <a class="github-button" href="https://github.com/ajzamora/text-particles.js/archive/master.zip" data-size="large" aria-label="Download ajzamora/text-particles.js on GitHub">Download</a>
+          p
+             | v1.0.0 | MIT License
