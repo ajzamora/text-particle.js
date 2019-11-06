@@ -1,11 +1,22 @@
 extends layouts/layout
 block title
   meta( charset="UTF-8")
-  title add title here
-  link( rel="preload" href=require("../fonts/Modak/Modak-Regular.ttf") as="font" type="font/ttf" crossorigin )
+  title ajzamora.github.io/text-particles.js
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
 block content
-  | add content here  
-  img(src=require('../images/svg/telegram-logo.svg') id="telegram-logo")    
-  p modak font here
-
-  
+  .grid
+    #github
+    .grid__wrapper
+      .page
+        .page__header
+          a(href="https://github.com/ajzamora/text-particles.js" alt="GitHub")
+            p.page__title
+              | TEXT-PARTICLES.JS
+        .page__middle
+          canvas#tp__canvas
+        .page__footer
+          p
+             | © Alden Zamora | 2019
+          <a class="github-button" href="https://github.com/ajzamora/text-particles.js/archive/master.zip" data-size="large" aria-label="Download ajzamora/text-particles.js on GitHub">Download</a>
+          p
+             | v1.0.0 | MIT License
